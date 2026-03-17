@@ -1,3 +1,5 @@
+![Result image](result.png)
+
 ## Docker + Cursor + Claude Code Dev Setup (Open Source Guide)
 
 ### 1. Goal
