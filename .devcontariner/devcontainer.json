@@ -1,0 +1,41 @@
+{
+  "name": "Docker + Cursor + Claude Code",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspaces/project",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/project,type=bind",
+  "remoteUser": "vscode",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "runArgs": [
+    // Do NOT mount your entire home directory by default.
+    // Add extra mounts here only if you fully understand the risk.
+  ],
+  "containerEnv": {
+    // Claude / Anthropic API key is injected via local .env or Docker env, not committed.
+    "ANTHROPIC_API_KEY": ""
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "github.copilot",        // optional, example only
+        "formulahendry.code-runner"
+      ]
+    }
+  },
+  "postCreateCommand": "pipx install claude-code || true",
+  "remoteEnv": {
+    // Let Cursor / VS Code know this is a devcontainer workspace
+    "DEVCONTAINER": "1"
+  }
+}
+
