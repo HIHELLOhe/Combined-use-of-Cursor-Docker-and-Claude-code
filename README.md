@@ -1,3 +1,11 @@
+# Combined-use-of-Cursor-Docker-and-Claude-code
+
+<p align="left">
+  <b>English</b> | <a href="README_zh.md">CN 中文</a>
+</p>
+
+---
+
 ![Result image](result.png)
 
 ## Docker + Cursor + Claude Code Dev Setup (Open Source Guide)
