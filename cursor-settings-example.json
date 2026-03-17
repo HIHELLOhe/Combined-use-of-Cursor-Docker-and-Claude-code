@@ -1,0 +1,25 @@
+{
+  // Example Cursor settings related to Claude Code safety and behavior.
+  // Copy the parts you need into your own Cursor settings.json.
+
+  "claudeCode.defaultMode": "default",
+  // Modes (for reference):
+  // - "default": asks before editing files.
+  // - "auto": can apply edits automatically.
+  // - "plan": discussion only, does not modify files.
+
+  "claudeCode.requireEditConfirmation": true,
+
+  // Limit Claude Code to the current workspace folder.
+  "claudeCode.allowedWorkspaceScope": "currentWorkspace",
+
+  // Optional: show a warning when a command tries to access paths
+  // outside the current project.
+  "claudeCode.warnOnOutsideWorkspaceAccess": true,
+
+  // You can integrate with environment variables defined in the devcontainer
+  // (for example, ANTHROPIC_API_KEY), so there is no need to hard-code keys
+  // into settings files.
+  "claudeCode.useEnvApiKey": true
+}
+
