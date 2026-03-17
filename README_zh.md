@@ -144,7 +144,6 @@ Claude Code 的学习资源示例：
   - 文档：`https://docs.docker.com/`
 - **Cursor**：
   - 官网：`https://www.cursor.com/`
-  - 文档（如有）：`https://docs.cursor.com/`
 - **Anthropic Claude API 与 Claude Code**：
   - 控制台：`https://console.anthropic.com/`
   - 文档：`https://docs.anthropic.com/`
